@@ -147,7 +147,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate synthetic scenarios for MI9 evaluation.")
     parser.add_argument("--output-dir", default=default_output_dir, help="Base directory to save the output folders.")
     parser.add_argument("--count", type=int, default=1, help="Number of scenarios to generate per class.")
-    parser.add_argument("--model", default="gemini-1.5-flash-latest", help="Gemini model for generation.")
+    parser.add_argument("--model", default="gemini-2.5-flash", help="Gemini model for generation.")
     parser.add_argument("--api-key", help="Google API key (or set GOOGLE_API_KEY).")
     parser.add_argument("--classes", nargs='+', help="Specify one or more scenario classes to generate.")
     parser.add_argument("--scenario-prompt", default=default_prompt_path, help="Path to the scenario prompt file.")

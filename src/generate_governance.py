@@ -163,7 +163,7 @@ def main():
 
     parser = argparse.ArgumentParser(description="Generate governance logs for scenarios in a directory.")
     parser.add_argument("base_dir", default=default_base_dir, nargs='?', help="Path to the base data directory containing run subdirectories.")
-    parser.add_argument("--model", default="gemini-1.5-flash-latest", help="Gemini model for generation.")
+    parser.add_argument("--model", default="gemini-2.5-flash", help="Gemini model for generation.")
     parser.add_argument("--api-key", help="Google API key (or set GOOGLE_API_KEY).")
     parser.add_argument("--governance-prompt", default=default_prompt_path, help="Path to the governance prompt file.")
     parser.add_argument("--concurrency", type=int, default=5, help="Number of parallel requests to make.")

@@ -262,7 +262,7 @@ def main():
     parser = argparse.ArgumentParser(description="Evaluate MI9 governance logs.")
     parser.add_argument("--input-dir", default=default_input_dir, help="Directory with run folders.")
     parser.add_argument("--num-workers", type=int, default=4, help="Number of concurrent threads.")
-    parser.add_argument("--model", default="gemini-1.5-flash-latest", help="Gemini model for evaluation.")
+    parser.add_argument("--model", default="gemini-2.5-flash", help="Gemini model for evaluation.")
     parser.add_argument("--api-key", help="Google API key.")
     parser.add_argument("--evaluation-prompt", default=default_prompt_path, help="Path to the evaluation prompt.")
     args = parser.parse_args()
